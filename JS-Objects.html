@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        var person = {
+            firstName: "John",
+            lastName: "Doe",
+            age: 50,
+            eyeColor: "blue"
+        };
+
+
+        var person1 = new Object();
+        person1.firstName = "John";
+        person1.lastName = "Doe";
+        person1.age = 50;
+        person1.eyeColor = "blue";
+
+        var x = person;  // This will not create a copy of person.
+
+        var person = { firstName: "John", lastName: "Doe", age: 50, eyeColor: "blue" }
+
+        var x = person;
+        x.age = 10;           // This will change both x.age and person.age
+
+
+    </script>
+</body>
+
+</html>
