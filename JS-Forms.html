@@ -1,0 +1,111 @@
+<!-- <html>
+
+<head>
+
+</head>
+
+<body>
+    <!-- 1
+        <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+            Name: <input type="text" name="fname">
+            <input type="submit" value="Submit">
+        </form>
+    -->
+
+
+<!-- 2
+        <h2>JavaScript Can Validate Input</h2>
+        <p>Please input a number between 1 and 10:</p>
+        <input id="numb">
+        <button type="button" onclick="myFunction()">Submit</button>
+        <p id="demo"></p> 
+    -->
+
+<!-- 3
+    <form action="/action_page.php" method="post">
+        <input type="text" name="fname" required>
+        <input type="submit" value="Submit">
+    </form> 
+    -->
+
+
+<!-- 4
+    <input id="id1" type="number" min="100" max="300" required>
+    <button onclick="myFunction()">OK</button>
+
+    <p id="demo"></p> -->
+
+
+
+<!-- 5 
+    <input id="id1" type="number" max="100">
+    <button onclick="myFunction()">OK</button>
+
+    <p id="demo"></p> -->
+
+
+<!--6 
+<input id="id1" type="number" min="100">
+<button onclick="myFunction()">OK</button>
+
+<p id="demo"></p> -->
+
+
+
+<script>
+    /*  1
+    function validateForm() {
+        var x = document.forms["myForm"]["fname"].value;
+        if (x == "") {
+            alert("Name must be filled out");
+            return false;
+        }
+    }
+    */
+
+    // 2
+    // function myFunction() {
+    //     var x, text;
+
+    //     // Get the value of the input field with id="numb"
+    //     x = document.getElementById("numb").value;
+
+    //     // If x is Not a Number or less than one or greater than 10
+    //     if (isNaN(x) || x < 1 || x > 10) {
+    //         text = "Input not valid";
+    //     } else {
+    //         text = "Input OK";
+    //     }
+    //     document.getElementById("demo").innerHTML = text;
+    // }
+
+    // 4
+    // function myFunction() {
+    //     var inpObj = document.getElementById("id1");
+    //     if (!inpObj.checkValidity()) {
+    //         document.getElementById("demo").innerHTML = inpObj.validationMessage;
+    //     }
+    // }
+
+    //5
+    // function myFunction() {
+    //     var txt = "";
+    //     if (document.getElementById("id1").validity.rangeOverflow) {
+    //         txt = "Value too large";
+    //     }
+    //     document.getElementById("demo").innerHTML = txt;
+    // }
+
+        //6
+    // function myFunction() {
+    //     var txt = "";
+    //     if (document.getElementById("id1").validity.rangeUnderflow) {
+    //         txt = "Value too small";
+    //     }
+    //     document.getElementById("demo").innerHTML = txt;
+    // }
+
+</script>
+</body>
+
+</html>
