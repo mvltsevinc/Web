@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $.getJSON("demo_ajax_json.js", function (result) {
+                    $.each(result, function(key,val){
+                        $("ul").append("<li id='"+key+"'>" + val + "</li>");
+                        // yada val yerine direkt resulti kullan
+                        $("ul").append("<li id='"+key+"'>" + result["firstName"] +" "+ result["lastName"] + "</li>");
+                    });
+                });
+
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <button>Get JSON data</button>
+
+    <div></div>
+
+    <ul>
+    </ul>
+
+</body>
+
+</html>
